@@ -4,5 +4,13 @@ public class Employee extends Person{
     public Employee(){
         super();
     }
+    public double getSalary() {
+        return salary;
+    }
+    @Override
+    public String getPosition() {
+        return position;
+    }
+
 
 }
