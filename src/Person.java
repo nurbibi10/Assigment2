@@ -1,4 +1,3 @@
-
 public class Person implements Payable, Comparable<Person>{
     private String name;
     private String surname;
