@@ -1,4 +1,4 @@
-public class Person{
+public class Person implements Payable, Comparable<Person>{
     private String name;
     private String surname;
     private int id;
@@ -26,5 +26,13 @@ public class Person{
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+    @Override
+    public double getPaymentAmount(){
+        return 0;
+    }
+    @Override
+    public int compareTo(Person other) {
+        return Double.compare(other.getPaymentAmount(), getPaymentAmount());
     }
 }
