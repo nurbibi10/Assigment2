@@ -9,6 +9,10 @@ public class Student extends Person{
         return gpa;
 
     }
+    public Student(String name, String surname, double gpa){
+        super(name,surname);
+        this.gpa=gpa;
+    }
 
     public void setGpa(double gpa) {
         this.gpa = gpa;
