@@ -10,6 +10,12 @@ public class Main {
 
         Collections.sort(people);
         Collections.reverse(people);
+        printData(people);
+    }
+    public static void printData(Iterable<Person> people){
+        for (Person person:people){
+            System.out.println(person);
+        }
     }
 
 }
