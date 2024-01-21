@@ -13,15 +13,17 @@ public class Student extends Person{
     public double getPaymentAmount(){
         return gpa > 2.67 ? step : 0;
     }
+
     public double getGpa() {
         return gpa;
 
     }
+
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
     @Override
     public String toString(){
-        return super.toString() + " earns " + getPaymentAmount() + " tenge ";
+        return super.toString() + " earns " + getPaymentAmount() + " tenge";
     }
 }
