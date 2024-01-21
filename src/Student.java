@@ -13,6 +13,10 @@ public class Student extends Person{
         super(name,surname);
         this.gpa=gpa;
     }
+    @Override
+    public double getPaymentAmount(){
+        return gpa > 2.67 ? step : 0;
+    }
 
     public void setGpa(double gpa) {
         this.gpa = gpa;
