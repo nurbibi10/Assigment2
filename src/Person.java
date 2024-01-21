@@ -1,3 +1,4 @@
+
 public class Person implements Payable, Comparable<Person>{
     private String name;
     private String surname;
@@ -12,6 +13,7 @@ public class Person implements Payable, Comparable<Person>{
         this.name = name;
         this.surname = surname;
     }
+
     public String getName() {
         return name;
     }
@@ -26,6 +28,14 @@ public class Person implements Payable, Comparable<Person>{
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+    public String getPosition(){
+        return "Student";
+    }
+
+    @Override
+    public String toString(){
+        return getPosition()+":"+ id + ". " + name + " " + surname;
     }
     @Override
     public double getPaymentAmount(){
