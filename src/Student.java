@@ -5,5 +5,13 @@ public class Student extends Person{
     public Student(){
         super();
     }
+    public double getGpa() {
+        return gpa;
+
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
 
 }
