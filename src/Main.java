@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Person> people = new ArrayList<>();
@@ -7,6 +8,8 @@ public class Main {
         people.add(new Student("Nabi", "Rakhmanberdiyeva", 3.7));
         people.add(new Employee("Maksat","Karzhaubaev", "curator", 250000.00));
 
+        Collections.sort(people);
+        Collections.reverse(people);
     }
 
 }
